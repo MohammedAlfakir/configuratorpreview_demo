@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { ConfiguratorPreviewDialog } from "configurator-previewer";
+// import myConfig from "./configurator-v1.0.0.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <ConfiguratorPreviewDialog configuratorJson={myConfig} /> */}
+
+      <ConfiguratorPreviewDialog
+        configuratorJson="/configurator-v1.0.0.json"
+        imagePrefix="https://imagedelivery.net/aYYmWUcv7lRhpLdU4ojPsA/"
+        imageSuffix="/public"
+      />
+
+      {/* <ConfiguratorPreviewDialog configuratorJson={} /> */}
+    </>
   );
 }
 
