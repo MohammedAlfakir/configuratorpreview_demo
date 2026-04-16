@@ -1,4 +1,4 @@
-import { ConfiguratorPreviewDialog } from "configurator-previewer";
+import { ConfiguratorPreviewDialog } from "@oak-some/configurator-previewer";
 
 function App() {
   return (
